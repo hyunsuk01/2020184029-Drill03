@@ -66,10 +66,20 @@ def run_rectangle():
 
 def run_fir():
     print('first')
+    x, y = 400, 90
+    for x in range(400, 720, 10):
+        x += 10
+        y += 10
+        draw_character(x,y)
+
     pass
 
 def run_sec():
     print('second')
+
+    for x in range(710, 80, -10):
+        draw_character(x, 510)
+    
     pass
 
 def run_thr():
@@ -80,8 +90,8 @@ def run_triangle():
     print('TRIANGLE')
 
     run_fir()
-    run_sec()
-    run_thr()
+    #run_sec()
+    #run_thr()
 
     pass
 
