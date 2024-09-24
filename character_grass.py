@@ -14,7 +14,7 @@ def draw_character(x, y):
 def run_circle():
     print('CIRCLE')
 
-    r, cx, cy = 300, 800//2, 600//2
+    r, cx, cy = 210, 800//2, 600//2
     
     for degree in range(0, 360, 3):
         theta = math.radians(degree)
@@ -26,20 +26,24 @@ def run_circle():
 def run_top():
     print('TOP')
 
-    for x in range(0, 800, 10):
-        draw_character(x, 550)
+    for x in range(90, 720, 10):
+        draw_character(x, 510)
     
     pass
 
 def run_right():
     print('RIGHT')
 
-    for y in range(550, 0, -10):
-        draw_character(790, y)
+    for y in range(510, 80, -10):
+        draw_character(720, y)
     pass
 
 def run_bottom():
     print('BOTTOM')
+
+    for x in range(710, 80, -10):
+        draw_character(x, 90)
+    
     pass
 
 def run_left():
@@ -50,7 +54,7 @@ def run_rectangle():
     print('RECTANGLE')
 
     #run_top()
-    run_right()
+    #run_right()
     run_bottom()
     run_left()
     
