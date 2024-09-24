@@ -9,6 +9,7 @@ character = load_image('character.png')
 def draw_character(x, y):
     clear_canvas_now()
     character.draw_now(x, y)
+    grass.draw_now(400, 30)
     delay(0.1)
 
 def run_circle():
@@ -25,7 +26,7 @@ def run_circle():
     
 def run_top():
     print('TOP')
-
+    
     for x in range(90, 720, 10):
         draw_character(x, 510)
     
@@ -51,21 +52,43 @@ def run_left():
 
     for y in range(90, 520, 10):
         draw_character(90, y)
-    pass
+
 
 def run_rectangle():
     print('RECTANGLE')
 
-    #run_top()
-    #run_right()
-    #run_bottom()
+    run_top()
+    run_right()
+    run_bottom()
     run_left()
     
     pass    
 
+def run_fir():
+    print('first')
+    pass
+
+def run_sec():
+    print('second')
+    pass
+
+def run_thr():
+    print('third')
+    pass
+
+def run_triangle():
+    print('TRIANGLE')
+
+    run_fir()
+    run_sec()
+    run_thr()
+
+    pass
+
 while True:
     #run_circle()
-    run_rectangle()
+    #run_rectangle()
+    run_triangle()
     break
     
 
