@@ -48,6 +48,9 @@ def run_bottom():
 
 def run_left():
     print('LEFT')
+
+    for y in range(90, 520, 10):
+        draw_character(90, y)
     pass
 
 def run_rectangle():
@@ -55,7 +58,7 @@ def run_rectangle():
 
     #run_top()
     #run_right()
-    run_bottom()
+    #run_bottom()
     run_left()
     
     pass    
