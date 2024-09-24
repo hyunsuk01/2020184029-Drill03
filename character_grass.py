@@ -51,45 +51,33 @@ def run_rectangle():
     run_bottom2()  
 
 def run_fir():
-    print('first')
     y = 90
     for x in range(400, 720, 10):
         y += 10
         draw_character(x,y)
 
-    pass
 
 def run_sec():
-    print('second')
-
     for x in range(710, 80, -10):
         draw_character(x, 400)
-    
-    pass
+
 
 def run_thr():
-    print('third')
     y = 400
     for x in range(90, 410, 10):
         y -= 10
         draw_character(x,y)
-    
-    pass
+
 
 def run_triangle():
-    print('TRIANGLE')
-
     run_fir()
     run_sec()
     run_thr()
 
-    pass
-
 while True:
-    #run_circle()
+    run_circle()
     run_rectangle()
-    #run_triangle()
-    break
+    run_triangle()
     
 
 close_canvas()
