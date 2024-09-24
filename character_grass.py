@@ -13,8 +13,6 @@ def draw_character(x, y):
     delay(0.1)
 
 def run_circle():
-    print('CIRCLE')
-
     r, cx, cy = 210, 800//2, 600//2
     
     for degree in range(-90, 270, 3):
@@ -25,44 +23,32 @@ def run_circle():
         
     
 def run_top():
-    print('TOP')
-    
     for x in range(90, 720, 10):
         draw_character(x, 510)
-    
-    pass
 
 def run_right():
-    print('RIGHT')
-
     for y in range(510, 80, -10):
         draw_character(720, y)
-    pass
 
-def run_bottom():
-    print('BOTTOM')
-
-    for x in range(710, 80, -10):
+def run_bottom1():
+    for x in range(400, 80, -10):
         draw_character(x, 90)
-    
-    pass
+
+def run_bottom2():
+    for x in range(710, 390, -10):
+        draw_character(x, 90)
 
 def run_left():
-    print('LEFT')
-
     for y in range(90, 520, 10):
         draw_character(90, y)
 
 
 def run_rectangle():
-    print('RECTANGLE')
-
+    run_bottom1()
+    run_left()
     run_top()
     run_right()
-    run_bottom()
-    run_left()
-    
-    pass    
+    run_bottom2()  
 
 def run_fir():
     print('first')
@@ -100,8 +86,8 @@ def run_triangle():
     pass
 
 while True:
-    run_circle()
-    #run_rectangle()
+    #run_circle()
+    run_rectangle()
     #run_triangle()
     break
     
