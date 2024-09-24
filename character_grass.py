@@ -17,7 +17,7 @@ def run_circle():
 
     r, cx, cy = 210, 800//2, 600//2
     
-    for degree in range(0, 360, 3):
+    for degree in range(-90, 270, 3):
         theta = math.radians(degree)
         x = r * math.cos(theta) + cx
         y = r * math.sin(theta) + cy
@@ -101,8 +101,8 @@ def run_triangle():
 
 while True:
     run_circle()
-    run_rectangle()
-    run_triangle()
+    #run_rectangle()
+    #run_triangle()
     break
     
 
